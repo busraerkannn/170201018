@@ -9,7 +9,7 @@ _Kocaeli Üniversitesi Bilgisayar Mühendisliği_
 
 ### Özet
 
-'2. El Kitap Al Sat Uygulaması' projesi sıfır veya ikinci el kitapları alabilmeyi veya satabilmeyi sağlayan uygulamadır. Birçok kategori ile ihtiyaç olan kitaplar bulunabilir. Kullanılmayan kitaplar kolay şekilde yüklenerek ilan oluşturulabilir.
+'2. El ve Yeni Kitap Al Sat Uygulaması' projesi sıfır veya ikinci el kitapları alabilmeyi veya satabilmeyi sağlayan uygulamadır. Birçok kategori ile ihtiyaç olan kitaplar bulunabilir. Kullanılmayan kitaplar kolay şekilde yüklenerek ilan oluşturulabilir.
 
 #### 1. Giriş
 
