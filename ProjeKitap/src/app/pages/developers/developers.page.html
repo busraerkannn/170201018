@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="title1">
+    <ion-title > 
+      Kategoriler
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content padding>
+ 
+      <ion-list>
+        <ion-item class="item" button *ngFor="let dev of kategoriler" [routerLink]="['/', 'developers', dev.id]">
+          <ion-avatar slot="start">
+            <img [src]="dev.img">
+          </ion-avatar>
+          <ion-label>
+            <h2>{{ dev.name }}</h2>
+            <p>{{ dev.skills }}</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+      
+</ion-content>

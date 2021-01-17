@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar class="title1">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home/:id"></ion-back-button>
+    </ion-buttons>
+    <ion-title>    Kitap Bilgileri</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="kitap">
+      <img class="image" style="height: 400px; width: 350px;" [src]="kitap.img">
+    <ion-card >
+    <ion-card-header>
+      <ion-card-title>{{kitap.name}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Yazar Adı: {{kitap.yazarAdi}}</p>
+      <p>ISBN: {{kitap.noISBN}}</p>
+      <p>Sayfa Sayısı: {{kitap.sayfaSayisi}}</p>
+      <p>Dil:{{kitap.dil}}</p>
+      <p>Fiyat:{{kitap.fiyat}}₺</p>
+    </ion-card-content>
+  </ion-card>
+  
+  </div>
+  <div *ngIf="kitap">
+  <ion-item class="button"  >
+    <ion-label class="ion-label">{{kitap.fiyat}}₺</ion-label>
+  <ion-button class="ion-button" (click)="addSepet()">Sepete Ekle</ion-button>
+  </ion-item>
+</div>
+</ion-content>

@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar class="title1">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title> Arama </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar (ionChange)="ionChange($event)" placeholder="Kitap Ara" ></ion-searchbar>
+  <ion-list *ngIf="kitapAdlari">
+      <ion-item button *ngFor="let item of kitapAdlari | async"  [routerLink]="['/', 'arama', item.id]" >
+       {{item.name}}
+      </ion-item>
+  </ion-list>
+</ion-content>
+

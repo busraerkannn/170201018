@@ -1,0 +1,26 @@
+.title1 {
+    --background: rgb(201, 39, 88);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:white;
+    font-weight: bold;
+    // padding-left: 170px;
+    font-size: 24px;
+  }
+  .card {
+    border-style: double;
+    border-width: 5px;
+    border-color: rgb(42, 131, 190);
+    height: 520px;
+    
+  }
+
+  .input{
+    height: 65px;
+    font-size: 20px;
+  }
+  .button{
+    height: 40px;
+    width: 480px;
+    font-size: 20px;
+    --background:rgb(201, 39, 88);
+  }

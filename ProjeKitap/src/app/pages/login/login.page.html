@@ -1,0 +1,30 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <form (ngSubmit)="login()" [formGroup]="loginForm">
+    <div class="input-group">
+      <ion-item>
+        <ion-input type="email" placeholder="Email" formControlName="email" ></ion-input>
+      </ion-item>
+      <div *ngIf="(email.dirty || email.touched) && email.errors" class="errors">
+        <span *ngIf="email.errors?.required">E-mail girilmesi zorunlu </span>
+        <span *ngIf="email.errors?.email">Geçersiz e-mail</span>
+      </div>
+      <ion-item>
+        <ion-input type="password" placeholder="Password" formControlName="password"></ion-input>
+      </ion-item>
+      <div *ngIf="(password.dirty || password.touched) && password.errors" class="errors">
+        <span *ngIf="password.errors?.required">Şifre Girilmesi zorunlu</span>
+        <span *ngIf="password.errors?.minlength">Şİfre en az 6 karakter olmalı</span>
+      </div>
+    </div>
+ 
+    <ion-button type="submit" expand="block" [disabled]="!loginForm.valid">Giriş</ion-button>
+ 
+   
+  </form>
+</ion-content>

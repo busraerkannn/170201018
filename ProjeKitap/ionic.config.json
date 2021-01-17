@@ -1,0 +1,7 @@
+{
+  "name": "ProjeKitap",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,28 @@
+<ion-header [translucent]="true"  >
+  <ion-toolbar class="title1"> 
+    <ion-title >
+      KİTAP MERKEZİ
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar  (ionChange)="onSearchTerm($event)" placeholder="Kitap Ara" [routerLink]="['/arama']"></ion-searchbar>
+  
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let item of kitaplar | async" col-12 >  
+        <ion-card button style="height: 300px; width: 200px;" [routerLink]="['/', 'home', item.id]" >
+        <img class="image" style="height: 200px; width: 180px;" [src]="item.img">
+        <ion-card-header>
+          <ion-card-title>{{item.name}}</ion-card-title>
+          <ion-label>  
+            <p>{{item.fiyat}}₺</p> 
+            </ion-label>
+        </ion-card-header>
+      </ion-card>      
+    </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+

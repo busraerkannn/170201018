@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar class="title1">
+    <ion-title>Kitap Ekle</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+    <ion-card class="card">
+      <ion-input class="input" type="text" placeholder="Kitap Adı" name="kitapAdi" [(ngModel)]="inputKitapAdi"></ion-input>
+      <ion-input class="input" type="text" placeholder="Yazar Adı" name="YazarAdi" [(ngModel)]="inputYazarAdi"></ion-input>
+      <ion-input class="input" type="text" placeholder="ISBN Numarası" name="noISBN" [(ngModel)]="inputISBN"></ion-input>
+      <ion-input class="input" type="text" placeholder="Sayfa Sayısı" name="sayfaSayi" [(ngModel)]="inputSayfaSayisi"></ion-input>
+      <ion-input class="input" type="text" placeholder="Fiyat" name="fiyat" [(ngModel)]="inputFiyat"></ion-input>
+      <ion-input class="input" type="text" placeholder="Kitap Fotoğrafı (URL)" name="url" [(ngModel)]="inputURL"></ion-input>
+      <ion-select class="input" interface="action-sheet" placeholder="Kategori Seçiniz" (ionChange)="getSelectedKategori()" [(ngModel)]="getSelectedValue">
+        <ion-select-option *ngFor="let data of kategoriData" value="{{data.id}}">{{data.kategoriAdi}}</ion-select-option> -->
+      </ion-select>
+      <ion-select class="input" interface="action-sheet" placeholder="Dil Seçiniz" (ionChange)="getSelectedDil()" [(ngModel)]="getSelectedDilAdi">
+        <ion-select-option *ngFor="let data of dilData" value="{{data.id}}">{{data.dilAdi}}</ion-select-option> -->
+      </ion-select>
+    </ion-card>
+
+    <ion-button class="button" (click)="addKitap()">Kitap Ekle</ion-button>
+    <!-- <ion-list> -->
+      <!-- <ion-item *ngFor="let prod of products | async">
+        <ion-label>
+          <h2>{{ prod.name }}</h2>
+          <p>Created by: {{ prod.creator }}</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>  -->
+</ion-content>

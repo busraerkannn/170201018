@@ -1,0 +1,23 @@
+.image{
+    padding-left: 100px;
+}
+.button{
+    position: fixed;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    .ion-label{
+        width: 100px;
+        text-align: center;
+    }
+    .ion-button{
+        padding-left: 120px;
+        width: 460px;
+        height: 40px;
+        --background:rgb(201, 39, 88);
+    }
+
+}
+.title1 {
+    --background: rgb(201, 39, 88);
+    
+  }

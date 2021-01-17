@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar class="title1">
+    <ion-title>Hesabım</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-item>
+    <ion-avatar slot="start">
+      <img src="/assets/resim/profile.png">
+    </ion-avatar>
+    <ion-label> 
+      <p>{{bilgi.name}}</p>
+      <p>E-mail:{{bilgi.email}}</p>
+    </ion-label>
+  </ion-item>
+  </ion-card>
+  <ion-list>
+    <ion-item button class="item">
+      <ion-label>Hesap Bilgilerim</ion-label>
+      <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+    </ion-item>
+    <ion-item button class="item">
+      <ion-label >İlanlarım</ion-label>
+      <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+    </ion-item >
+    <ion-item button class="item">
+      <ion-label >Siparişlerim</ion-label>
+      <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+    </ion-item >
+    <ion-item button class="item">
+      <ion-label>Yardım</ion-label>
+      <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+    </ion-item>
+    <ion-item button class="item">
+      <ion-label>Çıkış</ion-label>
+      <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+    </ion-item>
+  </ion-list>
+</ion-content>
