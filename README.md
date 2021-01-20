@@ -40,7 +40,7 @@ Platform browser is not installed! Would you like to install it? (Y/n)`
 - Açılan sayfada kategoriye ait kitapların ismi, fotoğrafı, fiyatı, yazar adı bilgileri gelir. Bu kitaplardan herhangi birine tıklandığı zaman kitap bilgilerinin ve sepete ekleme butonunun olduğu 'Kitap Bilgileri' sayfası açılır.
 - Kullanıcı 'Kitap Satma' seçeneğine tıkladığında kitap satmak için kitap bilgilerinin eklendiği sayfa çıkmaktadır.
 - Burada istenilen tüm bilgiler girilip kitap ekle butonuna tıklandığı zaman kitap uygulamaya yüklenir.
-- Kullnıcı 'Sepetim' seçeğine tıkladığı zaman sepete eklenen kitap varsa eklenen kitaplar görülür yoksa ekran boş olarak gelmektedir.
+- Kullanıcı 'Sepetim' seçeğine tıkladığı zaman sepete eklenen kitap varsa eklenen kitaplar görülür yoksa ekran boş olarak gelmektedir.
 - Kullanıcı 'Hesabım' sayfasına tıkladığı zaman kendisiyle ilgili bilgileri görebilir.
 
 #### 2. Temel Bilgiler
